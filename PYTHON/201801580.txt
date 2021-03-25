@@ -1,0 +1,50 @@
+######################################################
+# SALIDA DEL PROGRAMA DE PROMEDIO DE ALTURAS Y PESOS #
+######################################################
+
+EL NÚMERO DE PERSONAS INGRESADAS FUE 3 LOS PROMEDIOS ESTÁN DE LA SIGUIENTE MANERA: 
+
+PROMEIO DE ALTURAS PARA EL GENERO MASCULINO: 1.7  
+PROMEIO DE PESOS PARA EL GENERO MASCULINO: 140.0 
+PROMEIO DE ALTURAS PARA EL GENERO FEMENINO: 1.55 
+PROMEIO DE PESOS PARA EL GENERO FEMENINO: 110.0 
+
+######################################################
+# SALIDA DEL PROGRAMA DE PROMEDIO DE ALTURAS Y PESOS #
+######################################################
+
+EL NÚMERO DE PERSONAS INGRESADAS FUE 1 LOS PROMEDIOS ESTÁN DE LA SIGUIENTE MANERA: 
+
+PROMEIO DE ALTURAS PARA EL GENERO MASCULINO: 1.6  
+PROMEIO DE PESOS PARA EL GENERO MASCULINO: 140.0 
+PROMEIO DE ALTURAS PARA EL GENERO FEMENINO: 0.0 
+PROMEIO DE PESOS PARA EL GENERO FEMENINO: 0.0 
+
+###########################################################################################
+# SALIDA DEL PROGRAMA DIFETRENCIA ENTRE LA SUMA DE LOS CUADRADOS Y EL CUADRADO DE LA SUMA #
+###########################################################################################
+
+PARA EL NUMERO 10 LA DIFERENCIA ENTRE LA SUMA DE LOS CUADRADOS Y EL CUADRADO DE LA SUMA ES: 2640 
+
+###############################################
+# SALIDA DEL PROGRAMA FACTOR PRIMO MÁS GRANDE #
+###############################################
+
+PARA EL NUMERO 125 EL FACTOR PRIMO MÁS GRANDE ES: 5 
+
+########################################################
+# SALIDA DEL PROGRAMA SUCESIÓN DEL NÚMERO DE FIBONACCI #
+########################################################
+
+LA SUCESIÓN DE FIBONACCI PARA EL NÚMERO 11 ESTÁ DADA DE LA SIGUIENTE MANERA: [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55] 
+
+###########################################
+# SALIDA DEL PROGRAMA CALCULOS DE UN CONO #
+###########################################
+
+EL CONO CON RADIO 2.5 ,ALTURA 5.0 Y GENERATRIZ 8.0 TIENE: 
+
+AREA DE LA BASE = 19.634954084936208 
+AREA LATERAL = 62.83185307179586 
+VOLUMEN = 32.72492347489368 
+

@@ -58,7 +58,100 @@ while flag == True:
 	print("")
 	        		
 
-	if opt == "b":
+	if opt == "a":
+
+		print("######################################################")
+		print("# USTEDE SELECCIONÓ LA OPCIÓN ALTURA Y PESO PROMEDIO #")
+		print("######################################################")
+		print("")
+
+		
+		num = int(input("INGRESE EL NÚMERO DE PERSONAS QUE DESEA REGISTRAR: "))
+		print("")
+
+		masc = 0
+		fem = 0
+		altura = 0
+		peso = 0
+		mproma = 0
+		mpromp = 0
+		fproma = 0
+		fpromp = 0
+
+		for i in range(1,num+1):
+
+			gen = input("INGRESE EL GENERO (M ó F) DE LA PERSONA: ")
+			print("")
+			altura = float(input("INGRESE LA ALTURA DE LA PERSONA: "))
+			peso = float(input("INGRESE EL PESO DE LA PERSONA: "))
+
+			altura = pow(pow(altura, 2),0.5)
+			peso = pow(pow(peso, 2),0.5)
+
+			print("")
+
+			if gen == "F" or gen == "f":
+
+				fproma = fproma + altura
+				fpromp = fpromp + peso
+				fem = fem + 1
+
+
+			elif gen == "M" or gen == "m":
+
+				mproma = mproma + altura
+				mpromp = mpromp + peso
+				masc = masc + 1				
+
+			else:
+
+				print("USTED NO INGRESO UNA OPCIÓN VALIDA PARA EL GENERO DE LA PERSONA.")
+
+		prom1 = 0
+		prom2 = 0
+		prom3 = 0
+		prom4 = 0
+        
+		if masc == 0:
+
+			masc = 1
+
+		if fem ==0:
+
+			fem = 1
+
+
+		prom1 = mproma/masc
+		prom2 = mpromp/masc
+		prom3 = fproma/fem
+		prom4 = fpromp/fem
+
+		print("EL NÚMERO DE PERSONAS INGRESADAS FUE",num," LOS PROMEDIOS ESTÁN DE LA SIGUEINTE MANERA:")
+		print("")
+		print("PROMEDIO DE ALTURAS PARA EL GENERO MASCULINO: ", prom1)
+		print("PROMEDIO DE PESOS PARA EL GENERO MASCULINO: ", prom2)
+		print("PROMEDIO DE ALTURAS PARA EL GENERO FEMENINO: ", prom3)
+		print("PROMEDIO DE PESOS PARA EL GENERO FEMENINO: ", prom4)
+
+		SQL = "INSERT INTO programa1(num_personas,promedio_altura_m,promedio_peso_m,promedio_altura_f,promedio_peso_f) VALUES ('%s','%s','%s','%s','%s')"
+		datos = (num,prom1,prom2,prom3,prom4)
+		cursor.execute(SQL,datos)
+		connection.commit()
+
+		archivo.write('######################################################\n')
+		archivo.write('# SALIDA DEL PROGRAMA DE PROMEDIO DE ALTURAS Y PESOS #\n')
+		archivo.write('######################################################\n')
+		archivo.write('\n')
+		archivo.write('EL NÚMERO DE PERSONAS INGRESADAS FUE %s LOS PROMEDIOS ESTÁN DE LA SIGUIENTE MANERA: \n'%(num))
+		archivo.write('\n')
+		archivo.write('PROMEIO DE ALTURAS PARA EL GENERO MASCULINO: %s  \n'%(prom1))
+		archivo.write('PROMEIO DE PESOS PARA EL GENERO MASCULINO: %s \n'%(prom2))
+		archivo.write('PROMEIO DE ALTURAS PARA EL GENERO FEMENINO: %s \n'%(prom3))
+		archivo.write('PROMEIO DE PESOS PARA EL GENERO FEMENINO: %s \n'%(prom4))
+		archivo.write('\n')
+		archivo.close()
+
+	elif opt == "b":
 
 		print("##################################################################################################")
 		print("# USTED SELECCIONÓ LA OPCIÓN DIFETRENCIA ENTRE LA SUMA DE LOS CUADRADOS Y EL CUADRADO DE LA SUMA #")
